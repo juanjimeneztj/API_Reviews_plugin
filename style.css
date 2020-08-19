@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+#gsweb_Content_Reviews,#gsweb_Content_Reviews *{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#gsweb_Content_Reviews{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item:last-of-type{
+    border: none;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .stars{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    max-width: 100px;
+    width: 100%;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .stars > img{
+    height: auto!important;
+    max-width: 16px!important;
+    width: 100%!important;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-reviews-intro{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 15px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-reviews-intro a,#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-reviews-intro a:visited{
+    text-decoration: none;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-reviews-intro a:hover{
+    text-decoration: underline;
+}
+#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-review-item-description{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media all and (max-width: 500px){
+    #gsweb_Content_Reviews > .gsweb-Review-Item > .stars,#gsweb_Content_Reviews > .gsweb-Review-Item > .gsweb-reviews-intro{
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        margin: 15px auto;
+    }
+    #gsweb_Content_Reviews > .gsweb-Review-Item > .stars{
+        margin-top: 0;
+    }
+}
